@@ -1,0 +1,12 @@
+pc版本，
+按时间显示二维码。
+
+
+
+
+//var arr_wx = ['Liy52168']
+var wx_index = Math.floor((Math.random() * arr_wx.length));
+ var mess2 = arr_wx[wx_index];
+console.log(mess2);
+$(".erweima").attr('src','./images/'+ mess2 +'.jpg');
+$(".num").html(mess2);

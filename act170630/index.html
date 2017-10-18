@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<title>加入牛人牛股圈</title>
+		<style>
+			body{max-width: 1940px;min-width: 1240px;}
+			.banner{width: 100%;background: url(images/banner.jpg)no-repeat;background-size: 100% 100%;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/banner.jpg',sizingMethod='scale');overflow: auto;height: 690px;position: relative;}
+			.banner img{
+				    width: 15%;
+				    display: block;
+				    top: 583px;
+				    position: absolute;
+				    left: 60.75%;
+			}
+			.img1{height: 200px;background-size: 100% 100%;overflow: auto;}
+			.main{width: 1200px;margin: 0 auto;overflow: auto;}
+			.knwy{float: left;font-size: 42px;}
+			.knwy span{color: #e30a1b;line-height: 200px;}
+			.img1 img{display: block;margin: 0 auto;margin-top: 62px;width: 350px;}
+			.main1{padding: 0px 200px;height: 100%;}
+			.main1 img:first-child{float: left;margin-top: 75px;}
+			.lszj-panel{background: #fff;overflow: auto;padding-bottom: 40px;}
+			.lszj-title{width: 800px;margin: 20px auto;display: block;}
+			.zhanji-form{text-align: center;}
+			.zhanji-form td{border: 1px solid #b8342c !important;vertical-align: middle;padding: 10px 0px;text-align: center;font-size: 15px;}
+			.zhanji-form tr td:nth-last-child(2){width: 30% !important;padding: 10px;}
+			.zhanji-form tr td:nth-last-child(5){width: 15% !important;padding: 10px;}
+			.zhanji-form thead th{background: #b8342c;text-align: center;border: 1px solid #b8342c;padding: 10px;font-size: 16px;color: #fff;}
+			.gpbt-panel{background: url(images/bg_3.jpg)no-repeat;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg_3.jpg',sizingMethod='scale');background-size: 100% 100%;overflow: auto;}
+			.gpbt-title{width: 800px;margin: 20px auto;display: block;}
+			.zhexiantu{display: block;margin: 0 auto;margin-bottom: 40px;width: 100%;}
+			.zjsh{background: url(images/bg1.png)no-repeat;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg1.png',sizingMethod='scale');background-size: 100% 100%;height: 250px;width: 100%;}
+			.zjshwz{width: 80%;margin: 40px auto;display: block;}
+			.main{height: 100%;}
+			.btn-2{width: 20%;display: block;margin: 0 auto;}
+			.lnng{margin: 40px 20px;border: 2px dashed #999;padding: 20px 100px;overflow: auto;}
+			.fanggoupi{width: 100%;height: 250px;background: url(images/bg1.png)repeat-x;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg1.png',sizingMethod='scale');background-size: 100% 100%;}
+			.jpdtd{width: 50%;display: block;margin: 20px auto;margin-top: 40px;}
+			.lnng-btn{width: 20%;display: block;margin: 0 auto;}
+			.zzzm{background: #fff;}
+			.zzzm-title{margin: 20px 0px;text-align: center;font-size: 32px;font-weight: bold;}
+			.zzzm-title img{width: 800px;margin: 20px auto;}
+			.zzzm p{font-size: 14px;line-height: 21px;color: #4d4d4d;margin: 0;}
+			.zzzm-img{overflow: auto;margin: 40px;display: flex;display: -webkit-flex;justify-content:space-between;}
+			.wxsys{margin: 40px auto;overflow: auto;width: 860px;position: relative;}
+			.kuang{margin: 0px 50px;}
+			.erweimabj{position: absolute;left: 263px;top: 8px;width: 245px;}
+			.ewmsrcys{position: absolute;right: 85px;bottom: 68px;font-size: 31px;font-weight: bold;color: #fff;}
+			.footer{background: #3f3f3f;padding: 40px 0px;overflow: auto;}
+			.footer p{text-align: center;color: #858585;}
+			.footer div{text-align: center;font-size: 16px;margin-top: 40px;color: #cccccc;font-weight: bold;}
+			.donghua{animation: fdsx 1s infinite;-webkit-animation: fdsx 1s infinite;}
+			@keyframes fdsx{
+				0%{transform: scale(1);-webkit-transform: scale(1);}
+				50%{transform: scale(1.25);-webkit-transform: scale(1.25);}
+				100%{transform: scale(1);-webkit-transform: scale(1);}
+			}
+			@-webkit-keyframes fdsx{
+				0%{transform: scale(1);-webkit-transform: scale(1);}
+				50%{transform: scale(1.25);-webkit-transform: scale(1.25);}
+				100%{transform: scale(1);-webkit-transform: scale(1);}
+			}
+			.xsmfn{font-size: 32px;color: #fe0000;font-weight: bold;}
+			.xsmfn span{color: #e4ac00;}
+			.flex-div{z-index: 99;position: fixed;top: 50%;left: 20px;background: url(images/xuankuang.png)no-repeat;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/xuankuang.png',sizingMethod='scale');background-size: 100% 100%;width: 220px;height: 310px;transform: translateY(-50%);}
+			.flex-ewm{position: absolute;top: 85px;left: 34px;width: 150px;}
+			.flex-div div{position: absolute;bottom: 5px;color: white;font-size: 17px;text-align: center;width: 80%;left: 10%;color: #404040;}
+			.flex-div div span{color: #d38b26;font-size: 18px;font-weight: bold;}
+			.closeimg{z-index: 9999;position: absolute;top: -50px;right: -50px;width: 50px;}
+			.shadow{position: fixed;top: 0;left: 0;width: 100%;height: 100%;opacity: .5;background: #000000;display: none;filter: "alpha(opacity=50)";filter: alpha(opacity=50);zoom: 1;}
+			.is-Table{display: table;position: fixed;width: 100%;height: 100%;top: 0;left: 0;display: none;z-index: 102;}
+			.Center-Container.is-Inline {   
+			  text-align: center;  
+			  overflow: auto;  
+			  position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: none;z-index: 999;
+			  
+			}  
+			  
+			.Center-Container.is-Inline:after,  
+			.is-Inline .Center-Block {  
+			  display: inline-block;  
+			  vertical-align: middle;  
+			}  
+			  
+			.Center-Container.is-Inline:after {  
+			  content: '';  
+			  height: 100%;  
+			  margin-left: -0.25em; /* To offset spacing. May vary by font */  
+			}  
+			  
+			.is-Inline .Center-Block {  
+				background: url(images/tankuang.png)no-repeat;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/tankuang.png',sizingMethod='scale');background-size: 100% 100%;
+				min-width: 500px;
+				position: relative;
+			  max-width: 99%; /* Prevents issues with long content causes the content block to be pushed to the top */  
+			  /* max-width: calc(100% - 0.25em) /* Only for IE9+ */   
+			}  
+			.Center-Block div:first-child{margin-top: 120px;font-size: 18px;}
+			.Center-Block p{font-size: 16px;margin: 0;}
+			.erweimatc{width: 240px;margin-bottom: 5px;}
+			.donghua3{position: relative;}
+			.donghua2{position: relative;}
+		</style>
+	</head>
+	<body>
+		<div class="flex-div">
+			<img src="images/gctz111.jpg" class="erweima flex-ewm"/>
+			<div>打开微信扫一扫或添加微信公众号<span class="ewmsrc">gctz111</span></div>
+		</div>
+		<div class="banner">
+			<img src="images/gscz.png" class="donghua"/>
+		</div>
+		<div class="main">
+			<img src="images/title_1.png" class=""/>
+		</div>
+		<div class="gpbt-panel">
+			<div class="main">
+				<img src="images/tu_1.png" class="zhexiantu"/>
+				<img src="images/tu_2.png" class="zhexiantu"/>
+				<img src="images/tu_3.png" class="zhexiantu"/>
+			</div>
+			<div class="zjsh">
+				<div class="main">
+					<img src="images/zjshwz.png" class="zjshwz"/>
+					<img src="images/btn_2.png" class="donghua btn-2 donghua2" id="donghua2"/>
+				</div>
+			</div>
+		</div>
+		<div class="lszj-panel">
+			<div class="main">
+				<img src="images/title_2.png" class="lszj-title"/>
+				<table action="#" class="zhanji-form">
+					<thead>
+						<th>股票代码</th>
+						<th>股票名称</th>
+						<th>买入时间/价位</th>
+						<th>卖出时间/价位</th>
+						<th>收益空间</th>
+						<th>推荐理由</th>
+						<th>持有周期</th>
+					</thead>
+					<tr>
+						<td>002061</td>
+						<td>江山化工</td>
+						<td>2017年6月16日7.88元</td>
+						<td>2017年6月28日9.93元</td>
+						<td>26%</td>
+						<td>中报预增龙头江山化工(002061)6月24日净利润1.8亿元至2亿元,增长幅度为10.28倍至11.53倍</td>
+						<td>8个交易日 </td>
+					</tr>
+					<tr>
+						<td>002636</td>
+						<td>金安国纪</td>
+						<td>2017年6月22日15.25元</td>
+						<td>2017年6月27日17.33元</td>
+						<td>13%</td>
+						<td>业绩预增半年报净利润2.59亿元至3.02亿元，同比增长200%至250%走高</td>
+						<td>3个交易日</td>
+					</tr>
+					<tr>
+						<td>600516</td>
+						<td>方大炭素</td>
+						<td>2017年6月22日11.20元</td>
+						<td>2017年6月29日13.59元</td>
+						<td>21%</td>
+						<td>受供求关系影响，超高功率（主要用在电炉钢）的核心原材料针状焦也入有价无市的局面，业绩大增</td>
+						<td>5个交易日</td>
+					</tr>
+					<tr>
+						<td>002136</td>
+						<td>安纳达</td>
+						<td>2017年6月23日 15.29元</td>
+						<td>2017年6月27日 17.67元</td>
+						<td>16%</td>
+						<td>原材料钛精矿上涨是钛白粉上涨重要因素，同时，需求端快速增加，包括国外市场需求旺盛。</td>
+						<td>3个交易日</td>
+					</tr>
+				
+				</table>
+			</div>
+		</div>
+		<div class="fanggoupi">
+			<div class="main">
+				<img src="images/fanggoupi.png" class="jpdtd"/>
+				<img src="images/btn_3.png" class="lnng-btn donghua donghua3" id="donghua3"/>
+			</div>
+		</div>
+		<div class="zzzm">
+			<div class="main">
+				<div class="zzzm-title">
+					<img src="images/title_3.png"/>
+				</div>
+				<p>深圳市国诚投资咨询有限公司是经中国证监会批准,获颁证券投资咨询资格的专业咨询机构，证券期货业务许可证（流水号：000000000093），
+					主要从事证券投资咨询、投资银行等业务。致力于为机构和中小投资提供专业的证券投资咨询以及理财规划服务，帮助客户实现资产的保值增值。
+				</p>
+				<div class="zzzm-img">
+					<img src="images/tupian_1.png"/>
+					<img src="images/tupian_2.png"/>
+					<img src="images/tupian_3.png"/>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="wxsys">
+				<img src="images/wxsys.png"/>
+				<img src="images/kuang.png" class="kuang"/>
+				<img src="images/sdtj.png"/>
+				<div class="ewmsrc ewmsrcys">gctz111</div>
+				<img src="images/gctz111.jpg" class="erweima erweimabj"/>
+			</div>
+		</div>
+		<div class="shadow"></div>
+		<div class="Center-Container is-Inline">
+			<div class="Center-Block">
+				<div>微信扫一扫</div>
+				<div class="xsmfn">牛股限时<span>免费拿</span></div>
+				<p>（或手动添加微信号：<span class="ewmsrc">gctz111</span>）</p>
+				<img src="images/gctz111.jpg" class="erweima erweimatc"/>
+				<img src="images/close.png"/ class="closeimg">
+			</div>
+		</div>
+		<div class="footer">
+			<p>股市有风险，入市需谨慎。从事证券投资或期货交易请通过合法证券期货经营机构进行。</p>
+			<p>合法机构名单可到中国证监会网站<span>（www.csrc.gov.cn）</span>查询</p>
+			<div>深圳市国诚投资咨询有限公司</div>
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var ewmArr = ['gctz111','gctz178','gctz18','gctz233','gctz662','gctz868','gctz876','gctz998'];
+
+			 //var BIG_LIST = [10, 11, 14, 15, 16, 19, 20, 21];
+	        var date = new Date();
+	        var hours = date.getHours();
+	        var minutes = date.getMinutes();
+	        var stepMin = 1;
+		
+           var num = Math.floor(minutes / stepMin) % ewmArr.length;
+		   $(".erweima").attr('src','images/'+ ewmArr[num] +'.jpg');
+		   $(".ewmsrc").html(ewmArr[num]);
+			
+			$(document).ready(function(){
+				$("body").on('click','.closeimg',function(){
+					$(".is-Inline").hide();
+					$(".shadow").hide();
+				})
+				$("body").on('click','.donghua',function(){
+					$(".is-Inline").show();
+					$(".shadow").show();
+				});
+				$("body").on('click','#donghua2',function(){
+					$(".is-Inline").show();
+					$(".shadow").show();
+				});
+				$("body").on('click','#donghua3',function(){
+					$(".is-Inline").show();
+					$(".shadow").show();
+				});
+//				$(".donghua2").on('click',function(){
+//					$(".is-Inline").show();
+//					$(".shadow").show();
+//				});
+//				$(".worinima").on('click',function(){
+//					$(".is-Inline").show();
+//					$(".shadow").show();
+//				});
+			});
+		</script>
+	</body>
+</html>
